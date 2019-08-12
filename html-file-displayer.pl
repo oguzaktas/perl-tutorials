@@ -6,7 +6,7 @@ use warnings;
 sub expand { # expand tabs at 8 stops per tab
     my ($line) = @_;
     my ($left, $right);   # Parens needed so my applies to both.
-
+# comment lines
     while($line =~ /\t/) {
         ($left, $right) = split (/\t/, $line, 2);
 
