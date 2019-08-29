@@ -10,6 +10,7 @@ my ($ip, $protocol, $port, $myhouse, $yourhouse, $log);
 
 $protocol = getprotobyname('tcp'); # protocol is tcp
 
+
 ($ip, $port, $port_stop, $log) = @ARGV;
 
 if ($ip eq "-h") {
