@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 
 # current date and time
-
 @months = qw( Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec );
 @days = qw(Sun Mon Tue Wed Thu Fri Sat Sun);
 ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
@@ -12,11 +11,8 @@ $datestring = gmtime();
 print "GMT date and time $datestring\n\n";
 
 # time(), localtime() and gmtime() functions
-
 $epoc = time();
-
 print "Number of seconds since Jan 1, 1970 - $epoc\n";
-
 $datestring = localtime();
 print "Current date and time $datestring\n";
 $epoc = time();
