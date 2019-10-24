@@ -1,6 +1,5 @@
 #!/usr/bin/perl
 # Simple TCP Port Scanner
-# ./quickscan -h for usage
 
 use Socket;
 
@@ -9,7 +8,6 @@ $| = 1; # so \r works right
 my ($ip, $protocol, $port, $myhouse, $yourhouse, $log);
 
 $protocol = getprotobyname('tcp'); # protocol is tcp
-
 
 ($ip, $port, $port_stop, $log) = @ARGV;
 
